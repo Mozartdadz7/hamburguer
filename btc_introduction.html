@@ -1,0 +1,65 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the overview</title>
+    <link rel="stylesheet" href="F:\html-project\style.css">
+</head>
+
+<body>
+    <h1>Hello Geek!</h1>
+    <img src="F:\html-project\img\btc_onza.png">
+    <p style=>
+        <br>
+        <br>
+        <br>
+        <i>O texto abaixo foi escrito por Daniel Maques (Desenvolvedor de software a mais de 7 anos atuo principalmente no back-end, conheço linguagens como C, C++, C#, JavaScript, Java, Solidity) a fim de explicar alguma questões que podem ser a princípio difíceis de entender para quem lê o whitepaper do Bitcoin escrito por Satoshi Nakamoto. Esse é um post para quem tem interesses mais técnicos a respeito desse assunto.
+
+                Os textos de Satoshi e do Daniel vem sempre designados para que fique claro ao leitor. Segue o conteúdo:
+                
+                [Satoshi]
+                <br>
+                <p>
+                
+                Nós consideramos o cenário em que um atacante tentando gerar uma corrente alternativa mais rápido do que a corrente honesta. Mesmo se isso for conseguido, ela não vai tornar o sistema aberto para mudanças arbitrárias, como criar valor do nada ou tomar o dinheiro que nunca pertenceu ao atacante. Nós não irão aceitar uma transação inválida como pagamento, e nós honestos nunca aceitarão um bloco contendo-as. Um atacante pode apenas tentar modificar uma de suas próprias transações para pegar de volta o dinheiro que ele gastou recentemente.
+                
+                </p>
+                <br>
+                <p>
+                    [Daniel]
+                    O que ele quer dizer, é que a única forma de atacar a rede é alterar as suas próprias transações. Chegamos nessa mesma afirmativa tendo em mente que todas as transações são ⁶hasheadas, ou seja, quando uma das informações daquela transação mudar, a identificação (hash) dessa transação também é alterada e por sequencia o bloco no qual ela se encontra também é alterado.
+                
+                Caso o mesmo tente transferir essa transação adulterada para os demais ‘nós’ da rede, estes nós irão rejeitar a transação e o bloco desse usuário, pois todos os usuários possuem todos os blocos, então ficará fácil de saber se uma transação foi adulterada.
+                </p>
+                <br>
+                <p>A única forma de um atacante conseguir incluir sua transação alterada é vencendo a corrida da prova de trabalho para minerar o bloco atual que já teria sido adulterado anteriormente. Mas claro, só alterar o bloco e vencer o desafio não fazem uma transação se tornar válida, pois depois que cada bloco minerado ele é enviado a todos os nós da rede para que sejam devidamente auditados. Caso alguma transação esteja em desacordo com os registros anteriores, será realizada uma votação (onde 1 Voto = 1 CPU, como foi explicado no parágrafo Prova de Trabalho) levando em conta que para ter sucesso nessa jornada é de extrema importância ter 51% do poder de processamento, pois como foi dito “Se maior parte do poder de processamento é controlado por nós honestos, a corrente honesta irá crescer mais rapidamente e ultrapassar qualquer corrente competidora.”
+                
+                [Satoshi]
+                </p>
+                <br>
+                <p>
+                A corrida entre a corrente honesta e a corrente do atacante pode ser caracterizada como uma ¹⁰Caminhada Aleatória Binomial. O evento de sucesso é a corrente honesta ser estendida por um bloco, aumentando sua liderança em +1, e o evento de falha é a corrente do atacante ser estendida por um bloco, reduzindo o atraso em -1.
+                
+                ¹¹Caminhada Aleatória é um processo matemático que ocorre ao longo de uma série de estados conectado em uma linha. Cada estado é numerado e começamos a partir do estado 0. Lançando uma moeda, no caso de cair o lado cara avançamos uma casa e no caso de cair coroa voltamos uma casa, ao longo de uma série de estados.
+                
+                A probabilidade de um atacante alcançar de um determinado déficit é análoga ao problema da ¹²Ruina do Apostador. Suponha que um apostador com créditos ilimitados comece em déficit e jogue potencialmente um infinito número de vezes para tentar quebrar a banca. Nós vamos calcular a probabilidade de ele nunca conseguir isso, ou que um atacante simplesmente alcance a corrente ¹³honesta, como segue :
+                
+                p = probabilidade de um nó honesto encontrar o próximo bloco q
+                
+                q = probabilidade de um atacante encontrar o próximo bloco
+                
+                qz = probabilidade algum dia o atacante alcançar estando z blocos atrás
+            </p>
+            </i>
+    </p>
+    <br>
+    <br>
+    <br>
+    <img src="F:\html-project\img\calc1.png">
+
+
+
+</body>
+
+</html>
